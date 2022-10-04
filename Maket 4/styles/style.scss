@@ -1,0 +1,101 @@
+@import 'variables.scss';
+html {
+    font-size: 10px;
+}
+
+body {
+    color: $dark;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1232px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding: 21px 15px;
+}
+
+.nav {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    &__item {
+        margin-left: 2rem;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &__link {
+        color: $dark;
+        text-decoration: none;
+    }
+    &__btn {
+        font-size: 1.4rem;
+        background-color: $purple;
+        color: $white;
+        text-decoration: none;
+        padding: 1.2rem 2.4rem;
+        border: 0.6rem;
+    }
+}
+
+.banner {
+    text-align: center;
+    background-color: $dark;
+    color: $white;
+    padding-top: 62px;
+    padding-bottom: 757px;
+    position: relative;
+    &__title {
+        font-size: 5.5rem;
+        max-width: 570px;
+        margin: 0 auto 3.1rem;
+    }
+    &__img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -172px;
+        margin: 0 auto;
+    }
+}
+
+.container {
+    max-width: 1232px;
+    margin: 0 auto;
+    padding-left: 0 15px;
+}
+
+.btn-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.5rem;
+    &__btn {
+        border: 1px solid $white;
+        font-size: 1.6rem;
+        padding: 1.7rem 3.7rem;
+        color: white;
+        border-radius: 0.6rem;
+        margin-left: 0.8rem;
+        display: inline-block;
+    }
+}
+
+.btn-group__main {
+    font-size: 1.5rem;
+    background-color: $purple;
+    border: 1px solid $purple;
+    padding: 1.6rem 3.7rem;
+}
