@@ -1,0 +1,60 @@
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-pagination {
+    margin-bottom: 34px;
+}
+
+.swiper-button-next {
+    position: absolute;
+    top: 730px;
+    right: 168px;
+    background: url(../icons/arrow.svg) no-repeat center;
+    width: 30px;
+    height: 24px;
+    rotate: 180deg;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    top: 730px;
+    left: 168px;
+    background: url(../icons/arrow.svg) no-repeat center;
+    width: 30px;
+    height: 24px;
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--color-white);
+    width: 54px;
+    height: 8px;
+    border-radius: 4px;
+    bottom: 64px;
+}
+
+.swiper-button-text-left {
+    color: var(--color-white);
+    margin-left: 100px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.swiper-button-text-right {
+    color: var(--color-white);
+    margin-left: 115px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    rotate: 180deg;
+}

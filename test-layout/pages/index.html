@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+          href="../static/styles/style.css">
+    <link rel="stylesheet"
+          href="../static/styles/global.css">
+    <link rel="stylesheet"
+          href="../static/styles/dropdown.css">
+    <link rel="stylesheet"
+          href="../static/styles/burgermenu.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../static/styles/swiper.css">
+    <link rel="stylesheet"
+          href="../static/styles/adaptive.css">
+    <title>test layout</title>
+</head>
+
+<body>
+    <!--Header-->
+
+    <header class="header">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                   <span></span>
+            </label>
+
+            <div class="menu__box">
+                <ul class="menu__box-wrapper">
+                    <li class="box-wrapper__item">
+                    <a href="#"
+                       class="header__burger-menu-link">Servicios</a>
+                    <svg class="navigation-list__vector vector-services">
+                        <use xlink:href="../static/icons/sprite.svg#arrowblue"></use>
+                    </svg>
+                </li>
+                    <li class="box-wrapper__item">
+                        <a href="#" class="header__burger-menu-link">Productos</a>
+                        <svg class="navigation-list__vector vector-product">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblue"></use>
+                        </svg>
+                    </li>
+                    <li class="box-wrapper__item">
+                        <a href="#" class="header__burger-menu-link">Recursos</a>
+                        <svg class="navigation-list__vector vector-product">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblue"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#" class="header__burger-menu-link">Casos de éxito</a>
+                    </li>
+                    <li>
+                        <a href="#" class="header__burger-menu-link">Blog</a>
+                    </li></ul>
+
+            </div>
+        </div>
+        <div class="header__header-logo ">
+            <svg class="header-logo__icon">
+                <use xlink:href="../static/icons/sprite.svg#logo"></use>
+            </svg>
+        </div>
+
+        <nav class="header__navigation-bar">
+            <ul class="navigation-bar__navigation-list">
+                <li class="dropdown-btn-service">
+                    <a href="#"
+                       class="navigation-list__item navigation-list__margin-right">Servicios</a>
+                    <a href="#"><svg class="navigation-list__vector vector-services">
+                        <use xlink:href="../static/icons/sprite.svg#vector"></use>
+                    </svg>
+                    </a>
+                    <div class="navigation-list__dropdown dropdown-services">
+                        <ul class="dropdown__dropdown-list">
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#search"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Canales digitales y Growth Haking</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#basket"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">E-commerce</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#users"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Headhunting y Mentoring</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#consultation"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Consultoría CRM</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#rise"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Analítica Digital e Inteligencia Artificial</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#sync"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Diseño de experiencia</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#statistic"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Publicidad digital</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#settings"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Marketing Automation</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown-btn-product">
+                    <a href="#"
+                       class="navigation-list__item navigation-list__margin-right">Productos</a>
+                    <svg class="navigation-list__vector vector-product">
+                        <use xlink:href="../static/icons/sprite.svg#vector"></use>
+                    </svg>
+                    <div class="navigation-list__dropdown dropdown-product">
+                        <ul class="dropdown__dropdown-list">
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#skills"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Neo Digital Skills</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#cube"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Otros</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="dropdown-btn-resources">
+                    <a href="#"
+                       class="navigation-list__item navigation-list__margin-right">Recursos</a>
+                    <svg class="navigation-list__vector vector-resources">
+                        <use xlink:href="../static/icons/sprite.svg#vector"></use>
+                    </svg>
+                    <div class="navigation-list__dropdown dropdown-resources">
+                        <ul class="dropdown__dropdown-list">
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#cloud"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Descargables</a>
+                            </li>
+                            <li class="dropdown-list__dropdown-item">
+                                <svg class="dropdown-item__dropdown-icon">
+                                    <use xlink:href="../static/icons/sprite.svg#video"></use>
+                                </svg>
+                                <a href="#" class="dropdown-item__dropdown-link">Webinnars</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"
+                       class="navigation-list__item">Casos de éxito</a>
+                </li>
+                <li>
+                    <a href="#"
+                       class="navigation-list__item">Blog</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header__header-button">
+            <button class="header-button__button">Contáctanos</button>
+        </div>
+
+    </header>
+
+    <!--Header-->
+
+
+    <main>
+
+        <!--Hero-->
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section class="hero">
+                        <div class="container">
+                            <div class="hero-main-content__hero-content-description">
+                                <h1 class="hero-content-description__hero-title">Unimos la data y el diseño centrado en el usuario para obtener resultados de negocio</h1>
+                                <div class="hero-content-description__hero-block-button">
+                                    <div class="button-hero-wrapper">
+                                        <button class="hero-block-button__hero-button">Contáctanos</button>
+                                    </div>
+                                    <div class="link-hero-wrapper">
+                                        <a class="link-hero-wrapper__link" href="#">Ver soluciones</a>
+                                        <svg class="link-hero-wrapper__arrow">
+                                            <use xlink:href="../static/icons/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="hero-content-description__block-clients">
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            21
+                                        </p>
+                                        <p class="block-clients__description">
+                                            años de experiencia
+                                        </p>
+                                    </div>
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            +100
+                                        </p>
+                                        <p class="block-clients__description">
+                                            empresas en más de 15 sectores distintos
+                                        </p>
+                                    </div>
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            +800
+                                        </p>
+                                        <p class="block-clients__description">
+                                            proyectos ejecutados en los últimos 5 años
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__hero-images">
+                            <img class="hero-images__woman" src="../static/images/woman.webp" height="800" width="754"/>
+                            <svg class="hero-images__subtract">
+                                <use xlink:href="../static/icons/sprite.svg#subtract"></use>
+                            </svg>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="hero">
+                        <div class="container">
+                            <div class="hero-main-content__hero-content-description">
+                                <h1 class="hero-content-description__hero-title">Unimos la data y el diseño centrado en el usuario para obtener resultados de negocio</h1>
+                                <div class="hero-content-description__hero-block-button">
+                                    <div class="button-hero-wrapper">
+                                        <button class="hero-block-button__hero-button">Contáctanos</button>
+                                    </div>
+                                    <div class="link-hero-wrapper">
+                                        <a class="link-hero-wrapper__link" href="#">Ver soluciones</a>
+                                        <svg class="link-hero-wrapper__arrow">
+                                            <use xlink:href="../static/icons/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="hero-content-description__block-clients">
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            21
+                                        </p>
+                                        <p class="block-clients__description">
+                                            años de experiencia
+                                        </p>
+                                    </div>
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            +100
+                                        </p>
+                                        <p class="block-clients__description">
+                                            empresas en más de 15 sectores distintos
+                                        </p>
+                                    </div>
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            +800
+                                        </p>
+                                        <p class="block-clients__description">
+                                            proyectos ejecutados en los últimos 5 años
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__hero-images">
+                            <img class="hero-images__woman" src="../static/images/woman.webp" height="800" width="754"/>
+                            <svg class="hero-images__subtract">
+                                <use xlink:href="../static/icons/sprite.svg#subtract"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="hero">
+                        <div class="container">
+                            <div class="hero-main-content__hero-content-description">
+                                <h1 class="hero-content-description__hero-title">Unimos la data y el diseño centrado en el usuario para obtener resultados de negocio</h1>
+                                <div class="hero-content-description__hero-block-button">
+                                    <div class="button-hero-wrapper">
+                                        <button class="hero-block-button__hero-button">Contáctanos</button>
+                                    </div>
+                                    <div class="link-hero-wrapper">
+                                        <a class="link-hero-wrapper__link" href="#">Ver soluciones</a>
+                                        <svg class="link-hero-wrapper__arrow">
+                                            <use xlink:href="../static/icons/sprite.svg#arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="hero-content-description__block-clients">
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            21
+                                        </p>
+                                        <p class="block-clients__description">
+                                            años de experiencia
+                                        </p>
+                                    </div>
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            +100
+                                        </p>
+                                        <p class="block-clients__description">
+                                            empresas en más de 15 sectores distintos
+                                        </p>
+                                    </div>
+                                    <div class="block-clients__works">
+                                        <p class="block-clients__number">
+                                            +800
+                                        </p>
+                                        <p class="block-clients__description">
+                                            proyectos ejecutados en los últimos 5 años
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__hero-images">
+                            <img class="hero-images__woman" src="../static/images/woman.webp" height="800" width="754"/>
+                            <svg class="hero-images__subtract">
+                                <use xlink:href="../static/icons/sprite.svg#subtract"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="swiper-button-prev">
+                    <p class="swiper-button-disabled swiper-button-text-left">Anterior</p>
+                </div>
+                <div class="swiper-button-next">
+                    <p class="swiper-button-disabled swiper-button-text-right">Siguiente</p>
+                </div>
+                <div class="swiper-pagination my-swiper"></div>
+            </div>
+        </div>
+
+        <!--Hero-->
+
+        <!--Solutions-->
+
+        <section class="solutions container">
+            <h2 class="solutions__title">Contamos con soluciones en</h2>
+            <div class="solutions__sentence-block-wrapper">
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#search"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">Canales digitales y Growth Haking</h3>
+                    </div>
+                    <p class="sentence-block__text">Atrae más clientes a través de Canales digitales y potencia tus resultados con Growth Hacking.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                            <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#basket"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">E-commerce</h3>
+                    </div>
+                    <p class="sentence-block__text">Desarrolla estrategias que impulsen tu e-commerce.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                        <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#users"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">Headhunting y Mentoring</h3>
+                    </div>
+                    <p class="sentence-block__text">Recluta, selecciona personal y forma talento digital de alto performance.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                        <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#consultation"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">Consultoría CRM</h3>
+                    </div>
+                    <p class="sentence-block__text">Crea, desarrolla y mejora la relación con tus clientes.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                        <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#rise"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">Analítica Digital e Inteligencia Artificial</h3>
+                    </div>
+                    <p class="sentence-block__text">Mide, visualiza y capitaliza la data de tu empresa.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                        <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#sync"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">Diseño de experiencia</h3>
+                    </div>
+                    <p class="sentence-block__text">Atrae más clientes a través de Canales digitales y potencia tus resultados con Growth Hacking.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                        <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#statistic"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">Publicidad digital</h3>
+                    </div>
+                    <p class="sentence-block__text">Logra tus objetivos de negocio usando medios digitales pagados y SEM.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                        <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="sentence-block-wrapper__sentence-block">
+                    <div class="sentence-block__title-image">
+                        <svg class="dropdown-item__dropdown-icon">
+                            <use xlink:href="../static/icons/sprite.svg#settings"></use>
+                        </svg>
+                        <h3 class="sentence-block__title">Marketing Automation</h3>
+                    </div>
+                    <p class="sentence-block__text">Automatiza acciones,
+                        entrega contenido personalizado y fideliza a los clientes con nuestras soluciones.</p>
+                    <div class="sentence-block__link-icon">
+                        <a class="sentence-block__link" href="#">Ver soluciones</a>
+                        <svg class="sentence-block__icon">
+                            <use xlink:href="../static/icons/sprite.svg#arrowblack"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Solutions-->
+
+    </main>
+
+    <footer>
+
+        <!--Footer-->
+
+        <div class="footer__footer-wrapper container">
+            <h2 class="footer-wrapper__titile">Somos Partners</h2>
+            <div class="footer-wrapper__block-images">
+                <img src="../static/images/Google Marketing Platform.webp" height="56" width="217"/>
+                <img src="../static/images/Google Cloud.webp" height="56" width="136"/>
+                <img src="../static/images/sales.webp" height="56" width="80"/>
+                <img src="../static/images/hubspot.webp" height="41" width="142"/>
+                <img src="../static/images/AWS.webp" height="56" width="93"/>
+            </div>
+        </div>
+    </footer>
+
+    <!--Footer-->
+
+    <script src="../static/JS/dropDown.js"></script>
+    <script src="../static/JS/burgerMenu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../static/JS/carousel.js"></script>
+</body>
+
+</html>
