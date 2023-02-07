@@ -17,6 +17,11 @@
 #menu__toggle:checked ~ .menu__box {
     left: 0 !important;
 }
+
+.hamburger-menu {
+    display: none;
+}
+
 .menu__btn {
     display: none;
     position: relative;
@@ -81,6 +86,10 @@
 }
 
 @media (max-width: 1220px) {
+    .hamburger-menu {
+        display: block;
+    }
+
     .menu__btn {
         display: block;
     }
